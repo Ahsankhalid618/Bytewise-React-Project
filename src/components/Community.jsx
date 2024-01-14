@@ -1,7 +1,7 @@
 import React from 'react'
-import icon1 from "../assets/community/icon1.svg"
-import icon2 from "../assets/community/icon2.svg"
-import icon3 from "../assets/community/icon3.svg"
+import icon1 from "../assets/community/Icon1.svg"
+import icon2 from "../assets/community/Icon2.svg"
+import icon3 from "../assets/community/Icon3.svg"
 
 export const Community = () => {
     return (
