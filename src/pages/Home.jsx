@@ -1,4 +1,3 @@
-import { Navbar } from "../components/Navbar";
 import { HeroSection } from "../components/HeroSection";
 import { Clients } from "../components/Clients";
 import { Community } from "../components/Community";
@@ -9,7 +8,6 @@ import { Footer } from "../components/Footer";
 export const Home = () => {
   return (
     <>
-      <Navbar />
       <HeroSection />
       <Clients />
       <Community />
