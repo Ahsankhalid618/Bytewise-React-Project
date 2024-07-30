@@ -22,7 +22,7 @@ const Contact = () => {
   const formSubmitHandle = (e) => {
     e.preventDefault();
     // message can be saved to db or email can be sent from here!
-
+    console.log(data);
     swal("Sent!", "Message Sent Successfully!", "success");
   };
 
@@ -52,6 +52,7 @@ const Contact = () => {
                   value={data.fullname}
                   onChange={inputEvent}
                   placeholder="Enter your name"
+                  required
                 />
               </div>
               <div className="mb-3">
@@ -59,7 +60,7 @@ const Contact = () => {
                   htmlFor="exampleFormControlInput1"
                   className="form-label font-bold text-slate-500"
                 >
-                  Email address
+                  Email Address
                 </label>
                 <input
                   type="email"
@@ -69,6 +70,7 @@ const Contact = () => {
                   value={data.email}
                   onChange={inputEvent}
                   placeholder="name@example.com"
+                  required
                 />
               </div>
               <div className="mb-3">
@@ -85,6 +87,7 @@ const Contact = () => {
                   name="msg"
                   value={data.msg}
                   onChange={inputEvent}
+                  required
                 ></textarea>
                 <div className="col-12">
                   <button
